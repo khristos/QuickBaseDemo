@@ -18,7 +18,6 @@ var FieldService =  {
 	},
 	saveField: function (fieldJson) {
 		// Add the code here to call the API (or temporarily, just log fieldJson to the console) - http://www.mocky.io/v2/566061f21200008e3aabd919
-		event.preventDefault();
 		console.log(fieldJson);
 
 		minAjax({
