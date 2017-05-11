@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>QuickBase - Interview Demo</title>
+
+	<!-- Bootstrap CSS served from a CDN -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+  	<div class="well">
+
+			<form id="field-service-form" class="form-horizontal" role="form" onsubmit="" novalidate>
+			  <fieldset>
+			    <legend>Field Builder</legend>
+			    <div class="form-group">
+			      <label for="inputLabel" class="col-sm-2 control-label">Label</label>
+			      <div class="col-sm-5">
+			        <input type="text" class="form-control input-sm" id="inputLabel" placeholder="Sales Region" required="required" name="inputLabel">
+			      </div>
+			      <div class="col-sm-5 messages"></div>
+			    </div>
+			    <div class="form-group">
+			      <label for="inputType" class="col-sm-2 control-label">Type</label>
+			      <div class="col-sm-5">
+			      	<span class="blockquote-reverse">Multi-select Text</span> 
+			      	<label for="remember"><input type="checkbox" id="remember"> <small>A value is required</small></label>
+			      </div>
+			      <div class="col-sm-5 messages"></div>
+			    </div>
+			    <div class="form-group">
+			      <label for="inputDefault" class="col-sm-2 control-label">Default Value</label>
+			      <div class="col-sm-5">
+			        <input type="text" class="form-control input-sm" id="inputDefault" placeholder="Asia">
+			      </div>
+			      <div class="col-sm-5 messages"></div>
+			    </div>
+			    <div class="form-group">
+			      <label for="selectChoices" class="col-sm-2 control-label">Choices</label>
+			      <div class="col-sm-5" id="selectChoicesColl">
+			      	<ul class="form-control input-sm list-unstyled" id="selectChoices">
+								<li data-val="choice1">Asia</li>
+								<li data-val="choice2">Australia, New Zealand, and the Pacific Islands</li>
+								<li data-val="choice3">Western Europe</li>
+								<li data-val="choice4">North America</li>
+								<li data-val="choice5">Eastern Europe</li>
+								<li data-val="choice6">Latin America</li>
+								<li data-value="choice7">Middle East and Africa</li>
+							</ul>
+			        <!--<select multiple="" class="form-control input-sm" id="selectChoices" name="">
+                <option value="Asia">Asia</option>
+                <option value="Australia">Australia, New Zealand, and the Pacific Islands</option>
+                <option value="Western Europe">Western Europe</option>
+                <option value="North America">North America</option>
+                <option value="Eastern Europe">Eastern Europe</option>
+                <option value="Latin America">Latin America</option>
+                <option value="Middle East and Africa">Middle East and Africa</option>
+              </select>-->
+			      </div>
+			      <div class="col-sm-5 messages"></div>
+			    </div>
+			    <div class="form-group">
+			      <label for="selectOrder" class="col-sm-2 control-label">Order</label>
+			      <div class="col-sm-5">
+			        <select class="form-control input-sm" id="selectOrder">
+			          <option>Display choices in alphabetical order</option>
+			        </select>
+			      </div>
+			      <div class="col-sm-5 messages"></div>
+			    </div>
+			    <div class="form-group">
+			    	<label for="" class="col-sm-2 control-label"></label>
+			      <div class="col-sm-5 col-lg-offset-7">
+			        <button id="field-service-save" type="submit" class="btn btn-primary">Save Changes</button>
+			        <button type="reset" class="btn btn-default">Cancel</button>
+			      </div>
+			    </div>
+			  </fieldset>
+			</form> <!-- .form-horizontal -->
+
+		</div> <!-- .well -->
+	</div> <!-- .row -->
+</div> <!-- .container -->
+
+<!-- jQuery, Tether, Bootstrap JavaScript served from a CDN -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.js" integrity="sha256-jVfFb7AbGi7S/SLNl8SB4/MYaf549eEs+NlIWMoARHg=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Ajax library from CDN -->
+<script type="text/javascript" src="https://cdn.rawgit.com/flouthoc/minAjax.js/master/minify/index.min.js"></script>
+<!-- Underscore from a CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<!-- Validation library from a CDN -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.11.1/validate.min.js"></script>
+
+<!-- Custom JavaScript -->
+<script src="js/MockService.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
